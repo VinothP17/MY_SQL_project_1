@@ -1,0 +1,70 @@
+create database university;
+create table university.students(
+student_id INT primary key,
+student_name VARCHAR(50),
+student_age INT,
+student_major VARCHAR(50)
+);
+insert into university.students values
+(1,"ram",20,"mechanical"),
+(2,"sam",20,"mechanical"),
+(3,"selva",20,"robotics"),
+(4,"july",19,"ECE"),
+(5,"may",20,"AI"),
+(6,"april",19,"mechanical"),
+(7,"sara",21,"computer sicence"),
+(8,"lee",20,"computer sicence"),
+(9,"mery",20,"compter sicence"),
+(10,"jack",22,"civil");
+
+select * from university.students;
+
+select*from university.students
+ where student_major="computer sicence";
+
+select * from university.students
+sort order by student_age desc
+limit 1;
+
+select * from university.students sort;
+
+create database university;
+create table university.students(
+student_id INT primary key,
+student_name VARCHAR(50),
+student_age INT,
+student_major VARCHAR(50)
+);
+insert into university.students values
+(1,"ram",20,"mechanical"),
+(2,"sam",20,"mechanical"),
+(3,"selva",20,"robotics"),
+(4,"july",19,"ECE"),
+(5,"may",20,"AI"),
+(6,"april",19,"mechanical"),
+(7,"sara",21,"computer sicence"),
+(8,"lee",20,"computer sicence"),
+(9,"mery",20,"compter sicence"),
+(10,"jack",22,"civil");
+
+
+select * from university.students;
+
+select*from university.students
+ where student_major="computer sicence";
+
+select * from university.students
+sort order by student_age desc
+limit 1;
+
+select * from university.students sort;
+
+
+select max(student_age) from university.students;
+
+
+update university.students set student_major="Computer science" WHERE student_id=1;
+select* from university.students;
+
+delete from university.students WHERE student_id=7;
+select* from university.students;
