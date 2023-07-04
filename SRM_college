@@ -1,0 +1,21 @@
+create database srm;
+create table srm.student (
+s_no int,
+name varchar(20),
+roll_no varchar(30),
+dept varchar(50),
+clg_name varchar(30) 
+);
+
+insert into srm.student values
+(1,"ravi","20ME056","MECH","SRM"),
+(2,"MANi","20BT056","BT","SRM"),
+(3,"san","20NFG056","FGH","SRM"),
+(4,"sam","20ED056","EDH","SRM"),
+(5,"vashi","20EE056","EEE","SRM"),
+(6,"rishki","20EC056","ECE","SRM"),
+(7,"sara","20ENN056","ENN","SRM"),
+(8,"ishu","20EF056","EFI","SRM"),
+(9,"rishy","20CH056","CHEM","SRM"),
+(10,"babei","20NE056","NEH","SRM");
+select*from srm.student;
